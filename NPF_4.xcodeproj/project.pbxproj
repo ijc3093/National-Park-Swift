@@ -26,6 +26,14 @@
 		592D31BF244E96CF006E05AF /* NorthPole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D31BE244E96CF006E05AF /* NorthPole.swift */; };
 		592D31C1244E9F80006E05AF /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 592D31C0244E9F7F006E05AF /* images.jpeg */; };
 		597FF391269CEF3400BC8795 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 597FF390269CEF3400BC8795 /* data.plist */; };
+		59F6316926A5FB7F00862253 /* ParkDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316826A5FB7F00862253 /* ParkDetailTableViewCell.swift */; };
+		59F6316B26A5FBA200862253 /* ParkLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316A26A5FBA200862253 /* ParkLocationTableViewCell.swift */; };
+		59F6316D26A5FBBE00862253 /* ParkAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316C26A5FBBE00862253 /* ParkAreaTableViewCell.swift */; };
+		59F6316F26A5FBD400862253 /* ParkDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316E26A5FBD400862253 /* ParkDateTableViewCell.swift */; };
+		59F6317126A5FBE800862253 /* ParkImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6317026A5FBE800862253 /* ParkImageTableViewCell.swift */; };
+		59F6317326A5FBFC00862253 /* ParkDescTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6317226A5FBFC00862253 /* ParkDescTableViewCell.swift */; };
+		59F6317526A5FC0F00862253 /* ParkWikiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6317426A5FC0F00862253 /* ParkWikiTableViewCell.swift */; };
+		59F6317726A5FC2900862253 /* ParkMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6317626A5FC2900862253 /* ParkMapTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,14 @@
 		592D31BE244E96CF006E05AF /* NorthPole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthPole.swift; sourceTree = "<group>"; };
 		592D31C0244E9F7F006E05AF /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		597FF390269CEF3400BC8795 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		59F6316826A5FB7F00862253 /* ParkDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailTableViewCell.swift; sourceTree = "<group>"; };
+		59F6316A26A5FBA200862253 /* ParkLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkLocationTableViewCell.swift; sourceTree = "<group>"; };
+		59F6316C26A5FBBE00862253 /* ParkAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkAreaTableViewCell.swift; sourceTree = "<group>"; };
+		59F6316E26A5FBD400862253 /* ParkDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDateTableViewCell.swift; sourceTree = "<group>"; };
+		59F6317026A5FBE800862253 /* ParkImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkImageTableViewCell.swift; sourceTree = "<group>"; };
+		59F6317226A5FBFC00862253 /* ParkDescTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDescTableViewCell.swift; sourceTree = "<group>"; };
+		59F6317426A5FC0F00862253 /* ParkWikiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkWikiTableViewCell.swift; sourceTree = "<group>"; };
+		59F6317626A5FC2900862253 /* ParkMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +101,7 @@
 		592D317A244E771A006E05AF /* NPF_4 */ = {
 			isa = PBXGroup;
 			children = (
+				59F6316726A5FB2B00862253 /* Cell */,
 				597FF390269CEF3400BC8795 /* data.plist */,
 				592D3196244E8132006E05AF /* Model */,
 				592D3195244E80C7006E05AF /* ViewController */,
@@ -138,6 +155,21 @@
 				592D31BE244E96CF006E05AF /* NorthPole.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		59F6316726A5FB2B00862253 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				59F6316826A5FB7F00862253 /* ParkDetailTableViewCell.swift */,
+				59F6316A26A5FBA200862253 /* ParkLocationTableViewCell.swift */,
+				59F6316C26A5FBBE00862253 /* ParkAreaTableViewCell.swift */,
+				59F6316E26A5FBD400862253 /* ParkDateTableViewCell.swift */,
+				59F6317026A5FBE800862253 /* ParkImageTableViewCell.swift */,
+				59F6317226A5FBFC00862253 /* ParkDescTableViewCell.swift */,
+				59F6317426A5FC0F00862253 /* ParkWikiTableViewCell.swift */,
+				59F6317626A5FC2900862253 /* ParkMapTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,16 +246,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				592D319E244E831E006E05AF /* ParkTableVC.swift in Sources */,
+				59F6317126A5FBE800862253 /* ParkImageTableViewCell.swift in Sources */,
 				592D3180244E771A006E05AF /* ViewController.swift in Sources */,
 				592D319C244E82D9006E05AF /* MapVC.swift in Sources */,
+				59F6317526A5FC0F00862253 /* ParkWikiTableViewCell.swift in Sources */,
+				59F6316926A5FB7F00862253 /* ParkDetailTableViewCell.swift in Sources */,
 				592D31A7244E84AE006E05AF /* TableViewCellSecond.swift in Sources */,
+				59F6316F26A5FBD400862253 /* ParkDateTableViewCell.swift in Sources */,
 				592D319A244E828A006E05AF /* Parks.swift in Sources */,
 				592D31BF244E96CF006E05AF /* NorthPole.swift in Sources */,
 				592D31A9244E84EC006E05AF /* TableViewCellFirst.swift in Sources */,
+				59F6316B26A5FBA200862253 /* ParkLocationTableViewCell.swift in Sources */,
+				59F6316D26A5FBBE00862253 /* ParkAreaTableViewCell.swift in Sources */,
 				592D31A1244E8387006E05AF /* ParkDetailTableVC.swift in Sources */,
 				592D31A3244E83BB006E05AF /* FavoritesVC.swift in Sources */,
 				592D317C244E771A006E05AF /* AppDelegate.swift in Sources */,
+				59F6317726A5FC2900862253 /* ParkMapTableViewCell.swift in Sources */,
 				592D317E244E771A006E05AF /* SceneDelegate.swift in Sources */,
+				59F6317326A5FBFC00862253 /* ParkDescTableViewCell.swift in Sources */,
 				592D3198244E824F006E05AF /* Park.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,9 +12,11 @@ import MapKit
 
 // Class method
 class Park: NSObject, MKAnnotation{
+    
     var coordinate: CLLocationCoordinate2D {
         return location!.coordinate
     }
+    
     var title: String? {
         return parkName
     }
@@ -61,12 +63,27 @@ class Park: NSObject, MKAnnotation{
     
     // Designated Initializer with default values
     override convenience init() {
-        self.init(parkName: "Unknown", parkLocation: "Unknown", dateFormed: "Unknown", area: "Unknown", link: "Unknown", location: nil, imageLink: "Unknown", parkDescription: "Unknown", imageName: "Unknown", imageSize: "Unknown", imageType: "Unknown", distanceL: 0.0)
+        self.init(
+            parkName: "Unknown",
+            parkLocation: "Unknown",
+            dateFormed: "Unknown",
+            area: "Unknown",
+            link: "Unknown",
+            location: nil,
+            imageLink: "Unknown",
+            parkDescription: "Unknown",
+            imageName: "Unknown",
+            imageSize: "Unknown",
+            imageType: "Unknown",
+            distanceL: 0.0)
     }
     
     // Call the setter/mutator methods from the method with parameters
     // function parkName
-    func getParkName() -> String {return parkName}
+    func getParkName() -> String {
+        return parkName
+    }
+    
     func set(parkName: String){
         let parkName = parkName
         
@@ -79,7 +96,10 @@ class Park: NSObject, MKAnnotation{
     }
     
     // function parkLocation
-    func getParkLocation() -> String {return parkLocation}
+    func getParkLocation() -> String {
+        return parkLocation
+    }
+    
     func set(parkLocation: String){
         let parkLocation = parkLocation
         
@@ -90,26 +110,85 @@ class Park: NSObject, MKAnnotation{
             print("Bad value of ab in set(parkLocation): setting to TBD")
         }
     }
-    // function dateFormed, area, link, location, imageLink, and parkDescription
-    func getDateFormed() -> String {return dateFormed}
-    func set(dateFormed: String){self.dateFormed = dateFormed}
-    func getArea() -> String {return area}
-    func set(area: String){self.area = area}
-    func getLink() -> String {return link}
-    func set(link: String){self.link = link}
-    func getLocation() -> CLLocation? {return location}
-    func set(location: CLLocation?){self.location = location}
-    func getImageLink() -> String {return imageLink}
-    func set(imageLink: String){self.imageLink = imageLink}
-    func getParkDescription() -> String {return parkDescription}
-    func set(parkDescription: String){self.parkDescription = parkDescription}
     
-    func getImageName() -> String {return imageName}
-    func set(imageName: String){self.imageName = imageName}
-    func getImageSize() -> String {return imageSize}
-    func set(imageSize: String){self.imageSize = imageSize}
-    func getImageType() -> String {return imageType}
-    func set(imageType: String){self.imageType = imageType}
-    func getDistance() -> Float {return distanceL}
-    func set(distanceL: Float){self.distanceL = distanceL}
+    // function dateFormed, area, link, location, imageLink, and parkDescription
+    func getDateFormed() -> String {
+        return dateFormed
+    }
+    
+    func set(dateFormed: String){
+        self.dateFormed = dateFormed
+    }
+    
+    func getArea() -> String {
+        return area
+    }
+    
+    func set(area: String){
+        self.area = area
+    }
+    
+    func getLink() -> String {
+        return link
+    }
+    
+    func set(link: String){
+        self.link = link
+    }
+    
+    func getLocation() -> CLLocation? {
+        return location
+    }
+    
+    func set(location: CLLocation?){
+        self.location = location
+    }
+    
+    func getImageLink() -> String {
+        return imageLink
+    }
+    
+    func set(imageLink: String){
+        self.imageLink = imageLink
+    }
+    
+    func getParkDescription() -> String {
+        return parkDescription
+    }
+    
+    func set(parkDescription: String){
+        self.parkDescription = parkDescription
+    }
+    
+    func getImageName() -> String {
+        return imageName
+    }
+    
+    func set(imageName: String){
+        self.imageName = imageName
+    }
+    
+    func getImageSize() -> String {
+        return imageSize
+    }
+    
+    func set(imageSize: String){
+        self.imageSize = imageSize
+    }
+    
+    func getImageType() -> String {
+        return imageType
+    }
+    
+    func set(imageType: String){
+        self.imageType = imageType
+    }
+    
+    func getDistance() -> Float {
+        return distanceL
+    }
+    
+    func set(distanceL: Float){
+        self.distanceL = distanceL
+    }
 }

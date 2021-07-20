@@ -45,11 +45,17 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
     @IBAction func segmentedForSorting(_ sender: UISegmentedControl) {
         switch (sender.selectedSegmentIndex) {
         case 0:
-            parksList.sort(by: {$0.getParkName() < $1.getParkName()}) // sorting A-Z
+            parksList.sort(by: {
+                $0.getParkName() < $1.getParkName()
+            }) // sorting A-Z
             tableView.reloadData()
+            
         case 1:
-            parksList.sort(by: {$0.getParkName() > $1.getParkName()})
+            parksList.sort(by: {
+                $0.getParkName() > $1.getParkName()
+            })
             tableView.reloadData()
+            
         case 2:
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
@@ -61,10 +67,14 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
                 let miles = dist * 0.000621371192
                 p.set(distanceL: Float(miles))
             }
-            parksList.sort(by: {$0.getDistance() < $1.getDistance()})
+            parksList.sort(by: {
+                $0.getDistance() < $1.getDistance()
+            })
+            
             tableView.reloadData()
         default:
-            parksList.sort(by: {$0.getParkName() < $1.getParkName()})
+            parksList.sort(by: {
+                $0.getParkName() < $1.getParkName()})
             tableView.reloadData()
         }
     }
@@ -87,15 +97,20 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "parkCell", for: indexPath)
         
+        
         locationManager.desiredAccuracy = kCLLocationAccuracyBest   // best accuracy
         locationManager.startUpdatingLocation()
         let userLocation = locationManager.location
         let parkLocation = parksList[indexPath.row].getLocation()
-        //let distance = parkLocation?.distance(from: userLocation!)
-        //let distanceMiles = distance! *  0.000621371192
-
+        
+        let distance = parkLocation?.distance(from: userLocation!)
+        let distanceMiles = distance! *  0.000621371192
+        
+        //This is for miles only
+        cell.detailTextLabel?.text = String(format: "Distance: %.2f miles", distanceMiles)
+        
         cell.textLabel?.text = parksList[indexPath.row].getParkName()  // pass by value
-        //cell.detailTextLabel?.text = String(format: "Distance: %.2f miles", distanceMiles)
+        
         return cell
     }
 }

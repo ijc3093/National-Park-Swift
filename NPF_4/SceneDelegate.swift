@@ -44,10 +44,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     let parkDescription = dict["description"]! as! String
                     let distanceN = 0.0
                     
-                    let p = Park(parkName: parkName, parkLocation: parkLocation, dateFormed: dateFormed, area: area, link: link, location: location, imageLink: imageLink, parkDescription: parkDescription, imageName: imageName, imageSize: imageSize, imageType: imageType, distanceL: Float(distanceN))
+                    let p = Park(
+                        parkName: parkName,
+                        parkLocation: parkLocation,
+                        dateFormed: dateFormed,
+                        area: area,
+                        link: link,
+                        location: location,
+                        imageLink: imageLink,
+                        parkDescription: parkDescription,
+                        imageName: imageName,
+                        imageSize: imageSize,
+                        imageType: imageType,
+                        distanceL: Float(distanceN))
 
-                 
-                    
+        
                     //let lm = Landmark(name: name, state: state, location: location)
 
                     parks.append(p)
