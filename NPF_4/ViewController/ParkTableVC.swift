@@ -29,10 +29,25 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
     }
     
+    //This is for ParkDetailTableVC
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let sceneDelegate = self.navigationController?.viewControllers[0].view.window?.windowScene?.delegate as! SceneDelegate
+//        if let indexPath = tableView.indexPathForSelectedRow {
+//            let destinationViewController = segue.destination as! ParkDetailTableVC
+//            destinationViewController.parks = parksList[indexPath.row]
+//            destinationViewController.sceneDelegate = sceneDelegate
+//            let backButton = UIBarButtonItem()
+//            backButton.title = "Parks"
+//            self.navigationItem.backBarButtonItem = backButton
+//        }
+//    }
+    
+    
+    //This is for viewController(Detail)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sceneDelegate = self.navigationController?.viewControllers[0].view.window?.windowScene?.delegate as! SceneDelegate
         if let indexPath = tableView.indexPathForSelectedRow {
-            let destinationViewController = segue.destination as! ParkDetailTableVC
+            let destinationViewController = segue.destination as! ViewController
             destinationViewController.parks = parksList[indexPath.row]
             destinationViewController.sceneDelegate = sceneDelegate
             let backButton = UIBarButtonItem()
