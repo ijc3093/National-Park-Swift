@@ -30,24 +30,10 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
     }
     
     //This is for ParkDetailTableVC
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let sceneDelegate = self.navigationController?.viewControllers[0].view.window?.windowScene?.delegate as! SceneDelegate
-//        if let indexPath = tableView.indexPathForSelectedRow {
-//            let destinationViewController = segue.destination as! ParkDetailTableVC
-//            destinationViewController.parks = parksList[indexPath.row]
-//            destinationViewController.sceneDelegate = sceneDelegate
-//            let backButton = UIBarButtonItem()
-//            backButton.title = "Parks"
-//            self.navigationItem.backBarButtonItem = backButton
-//        }
-//    }
-    
-    
-    //This is for viewController(Detail)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sceneDelegate = self.navigationController?.viewControllers[0].view.window?.windowScene?.delegate as! SceneDelegate
         if let indexPath = tableView.indexPathForSelectedRow {
-            let destinationViewController = segue.destination as! ViewController
+            let destinationViewController = segue.destination as! ParkDetailTableVC
             destinationViewController.parks = parksList[indexPath.row]
             destinationViewController.sceneDelegate = sceneDelegate
             let backButton = UIBarButtonItem()
@@ -55,6 +41,20 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
             self.navigationItem.backBarButtonItem = backButton
         }
     }
+    
+    
+    //This is for viewController(Detail)
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let sceneDelegate = self.navigationController?.viewControllers[0].view.window?.windowScene?.delegate as! SceneDelegate
+//        if let indexPath = tableView.indexPathForSelectedRow {
+//            let destinationViewController = segue.destination as! ViewController
+//            destinationViewController.parks = parksList[indexPath.row]
+//            destinationViewController.sceneDelegate = sceneDelegate
+//            let backButton = UIBarButtonItem()
+//            backButton.title = "Parks"
+//            self.navigationItem.backBarButtonItem = backButton
+//        }
+//    }
     
     
     @IBAction func segmentedForSorting(_ sender: UISegmentedControl) {
