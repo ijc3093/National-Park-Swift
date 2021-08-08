@@ -87,6 +87,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let navVC2 = tabBarController?.viewControllers![2] as! UINavigationController
             let favVC = navVC2.viewControllers[0] as! FavoritesVC
             let parkVC = navVC.viewControllers[0] as! ParkTableVC
+        
             let parksList = Parks()
             parksList.parkList = parks
             parkVC.parks = parksList
