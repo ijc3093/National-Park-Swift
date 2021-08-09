@@ -26,6 +26,7 @@
 		592D31BF244E96CF006E05AF /* NorthPole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D31BE244E96CF006E05AF /* NorthPole.swift */; };
 		592D31C1244E9F80006E05AF /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 592D31C0244E9F7F006E05AF /* images.jpeg */; };
 		597FF391269CEF3400BC8795 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 597FF390269CEF3400BC8795 /* data.plist */; };
+		5994D74C26C1BFAF001A5E2D /* ParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74B26C1BFAF001A5E2D /* ParkTableViewCell.swift */; };
 		59F6316926A5FB7F00862253 /* ParkDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316826A5FB7F00862253 /* ParkDetailTableViewCell.swift */; };
 		59F6316B26A5FBA200862253 /* ParkLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316A26A5FBA200862253 /* ParkLocationTableViewCell.swift */; };
 		59F6316D26A5FBBE00862253 /* ParkAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6316C26A5FBBE00862253 /* ParkAreaTableViewCell.swift */; };
@@ -58,6 +59,7 @@
 		592D31BE244E96CF006E05AF /* NorthPole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthPole.swift; sourceTree = "<group>"; };
 		592D31C0244E9F7F006E05AF /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		597FF390269CEF3400BC8795 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		5994D74B26C1BFAF001A5E2D /* ParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewCell.swift; sourceTree = "<group>"; };
 		59F6316826A5FB7F00862253 /* ParkDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailTableViewCell.swift; sourceTree = "<group>"; };
 		59F6316A26A5FBA200862253 /* ParkLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkLocationTableViewCell.swift; sourceTree = "<group>"; };
 		59F6316C26A5FBBE00862253 /* ParkAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkAreaTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				592D31A2244E83BB006E05AF /* FavoritesVC.swift */,
 				592D31A8244E84EC006E05AF /* TableViewCellFirst.swift */,
 				592D31A6244E84AE006E05AF /* TableViewCellSecond.swift */,
+				5994D74B26C1BFAF001A5E2D /* ParkTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				592D319E244E831E006E05AF /* ParkTableVC.swift in Sources */,
 				59F6317126A5FBE800862253 /* ParkImageTableViewCell.swift in Sources */,
 				592D3180244E771A006E05AF /* ViewController.swift in Sources */,
+				5994D74C26C1BFAF001A5E2D /* ParkTableViewCell.swift in Sources */,
 				592D319C244E82D9006E05AF /* MapVC.swift in Sources */,
 				59F6317526A5FC0F00862253 /* ParkWikiTableViewCell.swift in Sources */,
 				59F6316926A5FB7F00862253 /* ParkDetailTableViewCell.swift in Sources */,

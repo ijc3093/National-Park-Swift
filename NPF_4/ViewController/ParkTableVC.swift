@@ -110,7 +110,7 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "parkCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "parkCell", for: indexPath) as! ParkTableViewCell
         
         
         locationManager.desiredAccuracy = kCLLocationAccuracyBest   // best accuracy
@@ -122,9 +122,9 @@ class ParkTableVC: UITableViewController, CLLocationManagerDelegate {
         let distanceMiles = distance! *  0.000621371192
         
         //This is for miles only
-        cell.detailTextLabel?.text = String(format: "Distance: %.2f miles", distanceMiles)
+        cell.subTitleLabel.text = String(format: "Distance: %.2f miles", distanceMiles)
         
-        cell.textLabel?.text = parksList[indexPath.row].getParkName()  // pass by value
+        cell.titleLabel.text = parksList[indexPath.row].getParkName()  // pass by value
         
         return cell
     }
