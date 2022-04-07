@@ -1,6 +1,9 @@
 # National-Park-Swift
 Acadia National Park
 
+# Goal
+This app allows a user to search for a national park for a given visitation date in the U.S. It does have map to show the place exactly where user can go there. 
+
 # Tool
 XCode
 iOS (Swift)
